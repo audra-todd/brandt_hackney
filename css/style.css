@@ -15,17 +15,21 @@ a {
   text-decoration: none;
 }
 
+
 img {
   max-width: 100%;
 }
 
+p {
+  font-size: 1.25em;
+}
 
 /******* HEADING *********/
 
 header {
   float: left;
   margin: 10px 0 0 0;
-  padding: 0 5%;
+  padding: 0 5% 0 5%;
   width: 100%;
 }
 
@@ -39,20 +43,24 @@ h1 {
   font-size: 2.5em;
   font-weight: normal;
   line-height: .8em;
-  color: #888;
+  color: #999;
 }
 
 h2 {
-  margin: 0 0 2px 0;
-  font-size: 2em;
+  margin: 10px 0 2px 0;
+  font-size: 1.5em;
   font-weight: normal;
+}
+
+h3 {
+  font-size: 1em;
 }
 
 /******* NAVIGATION ********/
 
 nav {
   text-align: right;
-  padding: 10px 0 0 0;
+  padding: 5px 0 0 0;
   margin: 0;
 }
 
@@ -75,7 +83,7 @@ nav a {
 /****** FOOTER **********/
 
 footer {
-  font-size: 0.75em;
+  font-size: 1em;
   text-align: center;
   clear: both;
   padding-top: 50px;
@@ -89,26 +97,33 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 1.2em; 
+  font-size: 1.25em; 
 }
 
 .contact-info a {
   display: block;
   min-height: 20px;
   background-repeat: no-repeat;
-  background-size: 20px 20px;
+  background-size: 25px 25px;
   padding: 0 0 0 30px;
   margin: 0 0 0 0;
 }
 
 .contact-info li.phone a {
   background-image: url('../img/phone_white.png');
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
 .contact-info li.mail a {
   background-image: url('../img/mail_white.png');
+  font-family: 'Alegreya Sans', sans-serif;
 }
 
+/*REEL*/
+
+#reelplayer {
+  padding-top: 50px;
+}
 
 /******* COLORS *********/
 
@@ -117,10 +132,11 @@ body {
 	background-color: #333;
 }
 
-/*nav bg on mobile*/
+/*nav bg on mobile ------------------
 nav {
  background: #333; 
 }
+-------------------------------*/
 
 /*Links*/
 a {
@@ -136,6 +152,62 @@ h2 {
   color: #888;
 }
 
-p {
+h3 {
   color: #555;
 }
+
+p {
+  color: #aaa;
+}
+
+
+/*Background on Reel Page*/
+#reelbody {
+background-color: #000;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+
+MEDIA QUERIES 
+
+@media (min-width: 769px) {
+  .main-header,
+  .main-nav,
+  .row {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+/***What's this below??????????????***/
+
+  .tagline {
+    font-size: 1.4em;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  .main-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-header,
+  .row {
+    width: 80%;
+    max-width: 1150px;
+  }
+}
+
+
+
